@@ -7,44 +7,43 @@
   <body>
 
    <header>
+    <img class="logo" src="img/logo.png" alt="City of Sedona"> 
+       
        <ul> 
        <li><a href="#">Информация</a></li> 
        <li><a href="#">Фото и видео</a></li> 
-        <li> <img src="img/logo.png" alt="City of Sedona"> </li>
-        <li><a href="#">Карта штата</a></li> 
+       <li><a href="#">Карта штата</a></li> 
         <li><a href="#">Гостиницы</a></li> 
        </ul>
       </header>
  
 <div class="filters">
+<form>   
       <h4> Инфраструктура: </h4>
       <ul>
-    <li> <input type="checkbox" checked> Бассейн </li>
-   <li> <input type="checkbox"> Парковка </li>
-   <li> <input type="checkbox"> Wi-Fi </li>
+    <li> <input type="checkbox" id="check1" checked> <label for="check1">Бассейн </label> </li>
+   <li> <input type="checkbox" id="check2"><label for="check2"> Парковка </label></li>
+   <li> <input type="checkbox" id="check3"><label for="check3"> Wi-Fi </label></li>
     </ul>
     
      <h4> Тип жилья: </h4>
       <ul>
-    <li> <input type="checkbox" checked> Гостиница </li>
-   <li> <input type="checkbox" checked> Мотель </li> 
-   <li> <input type="checkbox" checked> Апартаменты </li>
+    <li> <input type="checkbox" id="check4" checked><label for="check4"> Гостиница </label> </li>
+   <li> <input type="checkbox" id="check5" checked> <label for="check5">Мотель </label></li> 
+   <li> <input type="checkbox" id="check6" checked><label for="check6"> Апартаменты</label> </li>
+   
     </ul>
     
 
 <h4> Стоимость жилья в сутки </h4>
-    <table border="1"> 
-    <tr> 
-    <td> от 0 </td>
-    <td> до 3000 </td>
-    </tr>
-    </table>
-    <form>
+     <input type="text" value="от 0"> 
+     <input type="text" value="до 3000">
+    
    <p><input type="range" min="1" max="4000"></p>
-  </form>
+
     
 <a class="btn btn-show" href="#"> Показать </a>
-      </div>
+ </form>   </div>
 
 <div class="founded"> 
 <h3> Найдено: 3</h3>
@@ -60,16 +59,16 @@
 </div>     
       
 <div class="results"> 
-<img src="img/amara.jpg" width="135" height="89">       
+<img src="img/amara.jpg" width="135" height="89">  <div class="result1">     
 <h3> Amara resort & Spa</h3>
 <img src="img/4stars.png">
 <p> Гостиница </p>
 <p> от 4000 р.</p>
 <a class="btn details-btn" href="#"> Подробнее </a>
 <a class="btn book-btn" href="#"> Забронировать </a>
-<span class="rating"> <b> Рейтинг: 8,5 </b></span>    <br>
+<span class="rating"> <b> Рейтинг: 8,5 </b></span>  </div>
 
-    
+ <div class="result2">
 <img src="img/quailinn.jpg"  width="135" height="89">       
 <h3> Desert Quail INN</h3>
 <img src="img/3stars.png">
@@ -77,8 +76,9 @@
 <p> от 3000 р.</p>
 <a class="btn details-btn" href="#"> Подробнее </a>
 <a class="btn book-btn" href="#"> Забронировать </a>
-<span class="rating"> <b> Рейтинг: 8,9 </b></span> <br>
-    
+<span class="rating"> <b> Рейтинг: 8,9 </b></span> </div>
+ 
+<div class="result2">
 <img src="img/villasatpoco.jpg"  width="135" height="89">       
 <h3> Villas at Poco Diablo </h3>
 <img src="img/2stars.png">
@@ -86,7 +86,7 @@
 <p> от 2000 р.</p>
 <a class="btn details-btn" href="#"> Подробнее </a>
 <a class="btn book-btn" href="#"> Забронировать </a>
-<span class="rating"> <b> Рейтинг: 9,2 </b></span><br>
+<span class="rating"> <b> Рейтинг: 9,2 </b></span></div>
 </div>     
       
       
