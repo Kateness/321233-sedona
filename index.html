@@ -7,59 +7,64 @@
   </head>
   <body>
 
-   <header>
-       
+<header class="main-header">
+<div class="layout-container clearfix">       
  <img class="logo" src="img/logo.png" alt="City of Sedona"> 
-       
-       <ul> 
+      <ul class="clearfix"> 
        <li><a href="#">Информация</a></li> 
        <li><a href="#">Фото и видео</a></li> 
        <li><a href="#">Карта штата</a></li> 
         <li><a href="#">Гостиницы</a></li> 
        </ul>
-      </header>
-<div class="intro"> 
-    <img src="img/grgsedona.jpg" alt="Welcome to the gorgeous Sedona">
-</div>
-
-<div class="description">
-      <b> Седона - небольшой городок в Аризоне, заслуживающий большего! </b>
-   <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </div>
+    </div>
+</header>
       
-<div class="features"> 
-   <div class="first-features">
-    <b>Настоящий городок </b>
-    <p>-№1- </p>
-    <p> Седона - не аттракцион для туристов, там течет своя жизнь </p>
-    <div class="feature-pic"> <img src="img/feature1.jpg" alt="City of Sedona" width="800" height="257"> </div>
-      </div>
+<main class="layout-container">   
+  <div class="intro layout-container"> 
+    <img src="img/index-background.jpg" alt="Welcome to the gorgeous Sedona">
+  </div>
+
+  <div class="description">
+      <b> Седона - небольшой городок в Аризоне, заслуживающий большего! </b>
+      <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+     </div>
+      
+  <div class="features clearfix"> 
+   <div class="first-feature clearfix">
+       <div class="first-feature-text">
+     <b class="feature-name">Настоящий городок </b>
+     <p>-№1- <br>
+      Седона - не аттракцион для туристов, там течет своя жизнь </p> </div>  
+   <div class="feature1-pic"> <img src="img/feature1.jpg" alt="City of Sedona"> </div>
+    </div>
+ 
+<div class="first-feature-details clearfix">     
 <div class="feature1-detail">
-<img src="img/house.png" alt="Жилье">
-    <b>Жилье</b>
+<img src="img/house.png" alt="Жилье"> <br>
+    <b>Жилье</b> 
     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
     </div>
     
 <div class="feature1-detail">
-    <img src="img/food.png" alt="Еда">
-    <b>Еда</b>
+    <img src="img/food.png" alt="Еда"> <br>
+    <b>Еда</b> 
     <p> Всегда заказывайте фирменный бургер,
 Вы НЕ разочаруетесь!</p>
     </div>
     
     <div class="feature1-detail"> 
-    <img src="img/souvenirs.png" alt="Сувениры">
+    <img src="img/souvenirs.png" alt="Сувениры"> <br>
     <b>Сувениры </b>
     <p> Не только китайского, но и местного производства!</p>
     </div>
+</div>     
     
-    
-    <div class="first-features">
-        <div class="feature-pic"> <img src="img/feature2.jpg" alt="City of Sedona" width="800" height="257"> </div>
-     <b>Там есть мост дьявола</b>
+    <div class="feature2">
+        <div class="feature2-pic"> <img src="img/feature2.jpg" alt="City of Sedona"> </div>
+    <div class="second-picture-text"></div> <b>Там есть мост дьявола</b>
     <p>-№2- </p>
     <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
-          </div>
+      </div>    </div>
    
     <div class="further-features"> 
     <b>Небольшая площадь</b>       
@@ -74,6 +79,7 @@
     <p> Ехать в Седону из Лас-Вегаса совсем 
 НЕ СКУЧНО!</p>
      </div>
+      
     <div class="further-features"> 
     <b>Мало туристов</b>
     <p>  -№5-</p>
@@ -81,29 +87,34 @@
     </div>
      </div>
 
-<div class="intrested">
+  <div class="interested">
+      <div class="interested-text">
     <h2> Заинтересовались? </h2>
     <p> Укажите предполагаемые даты поездки, 
 и мы покажем вам лучшие предложения гостиниц в Cедоне
  </p>
+          
    <div class="hotel-search">
        <b class="hotel-search"> Поиск гостиницы в Седоне</b>
-       </div> 
+       </div> </div> 
     <div class="map"> 
-    <img src="img/map.jpg">
+    <img src="img/map.jpg" alt="Sedona Map">
     </div>
     </div>
-       
+</main> 
+      
 <footer>
-  <b> #VISITSEDONA </b>  
-<div class="social-links"> 
-    <a class="btn vk-btn" href="#"> Вконтакте </a>
-    <a class="btn fb-btn" href="#"> Facebook </a>
+    <div class="layout-container clearfix">
+       <b> #VISITSEDONA </b>  
+    <div class="social-links"> 
+    <a class="btn vk-btn" href="#"> Вконтакте </a> 
+    <a class="btn fb-btn" href="#"> Facebook </a> 
     <a class="btn youtube-btn" href="#"> Youtube </a>
-    </div>  
-<div class="copyright">
+        </div> 
+    <div class="copyright">
     <p> website by </p> <a class="copyright-img" href="htmlacademy.ru">HTML Academy</a>
     </div>    
+    </div> 
 </footer>
     
 <div class="popup-search"> <form action="#"> 
@@ -117,10 +128,7 @@
         <input type="text" id="kids" size="5">
        </form>
           <a class="btn find-results" href="#"> Найти </a> </div>
-    
-    
-    
-      
+
     </body>
 </html>
  

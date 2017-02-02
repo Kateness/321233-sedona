@@ -4,6 +4,7 @@ body {
     font-weight: normal;
     color:#333333; 
     line-height:21px;
+    background-color: #f2f2f2;
     }
 
 h2 {
@@ -21,3 +22,198 @@ h3 {
     color:#000000; 
     line-height:26px;
     }
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+html {
+box-sizing: border-box;
+}
+.content-box-component {
+box-sizing: content-box;
+} 
+
+.layout-container{
+    width:1200px;
+    margin:0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
+
+.logo {
+    display:inline-block;
+    text-align:center;
+}
+
+.header {
+    min-height:56px;
+}
+
+.description  {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.first-feature-text {
+    float:left;
+    width:400px;
+    height:255px;
+    padding:50px;
+}
+
+.feature1-pic {
+    float:right;
+    width:800px;
+    height:255px;
+}
+
+.feature1-detail {
+    float:left;
+    width:400px;
+    height:335px;
+    padding: 55px 55px 65px 55px;
+    }
+
+.feature1-detail:last-child {
+    float:right;
+}
+
+
+.feature2-pic {
+    float:left;
+    width:800px;
+    height:255px;
+}
+
+.second-picture-text {
+    float:right;
+    width:400px;
+    height:255px;
+    padding:50px 40px 50px 40px;
+
+}
+
+.further-features {
+    float:left;
+    width: 400px;
+    height:255px;
+    padding: 28px 60px 40px 60px;
+}
+
+.interested-text {
+    padding: 34px 300px 110px 300px;
+}
+
+footer b {
+    float: left;
+    width:241px;
+    height:119px;
+    padding:74px 115px 25px 120px;
+    margin-left: 72px;
+    margin-right: 88px;
+}
+
+.social-links {
+    float:left;
+    width: 400px;
+    height: 119px;
+    padding: 37px 125px 37px 125px;
+    margin-right: 88px;
+}
+
+.copyright {
+    float:right;
+    width:241px;
+    height:119px;
+    padding: 40px 25px 40px 10px;
+    margin-right: 72px;
+}
+
+.hotel-search {
+    width: 575px;
+    height:85px
+}
+
+label {
+    padding: 55px;
+}
+
+.filter1 {
+    float: left;
+    width:240px;
+    height:215px;
+    margin-left: 72px;
+}
+
+.filter2 {
+    float: left;
+    width:288px;
+    height:215px;
+    margin-right: 200px;
+}
+
+.filter3 {
+    float: right;
+    width:328px;
+    height:215px;
+    margin-right: 72px;
+}
+
+.founded {
+    width: 1200px;
+    height: 90px;
+}
+
+h3 {
+    float: left;
+    width:160px;
+    margin-left: 72px;
+    padding-right: 40px;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+b {
+    float:left;
+    width: 370px;
+    padding-top:45px;
+    padding-bottom: 40px;
+    margin-right: 288px;
+}
+
+.sort-btns {
+    float:right;
+    width: 240px;
+    margin-right: 88px;
+    padding: 35px 0px 35px 85px;
+}
+
+.result {
+    width:1200px;
+    height:150px;
+    padding: 30px 72px 30px 72px;
+}
+
+.result img {
+    display:block;
+    float: left;
+    padding: 30px 30px 30px 0px;
+}
+
+.result-description {
+    float:left;
+    width:360px;
+    padding: 30px 295px 30px 0px;
+    
+}
+
+.result-rating; {
+    float:right;
+    width:240px;
+    padding: 30px 0px 30px 150px;
+}
