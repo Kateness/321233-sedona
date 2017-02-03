@@ -105,6 +105,11 @@ box-sizing: content-box;
     padding: 28px 60px 40px 60px;
 }
 
+.intrested {
+    margin-top:60px;
+    height:885px;
+}
+
 .interested-text {
     padding: 34px 300px 110px 300px;
 }
@@ -123,14 +128,14 @@ footer b {
     width: 400px;
     height: 119px;
     padding: 37px 125px 37px 125px;
-    margin-right: 88px;
+    margin-right: 10px;
 }
 
 .copyright {
     float:right;
     width:241px;
     height:119px;
-    padding: 40px 25px 40px 10px;
+    padding: 37px 25px 40px 10px;
     margin-right: 72px;
 }
 
@@ -161,7 +166,7 @@ label {
     float: right;
     width:328px;
     height:215px;
-    margin-right: 72px;
+    
 }
 
 .founded {
@@ -169,21 +174,25 @@ label {
     height: 90px;
 }
 
-h3 {
+.founded h3 {
     float: left;
     width:160px;
     margin-left: 72px;
     padding-right: 40px;
-    padding-top:30px;
-    padding-bottom: 30px;
+    padding-top:31px;
+    padding-bottom: 31px;
 }
 
-b {
+.founded p {
     float:left;
-    width: 370px;
-    padding-top:45px;
-    padding-bottom: 40px;
-    margin-right: 288px;
+    padding-top:41px;
+    padding-bottom:41px;
+}
+
+.founded ul {
+    float:left;
+    width:288px;
+    height:90px;
 }
 
 .sort-btns {
@@ -196,19 +205,20 @@ b {
 .result {
     width:1200px;
     height:150px;
-    padding: 30px 72px 30px 72px;
+    margin: 30px 72px 30px 72px;
 }
 
 .result img {
     display:block;
     float: left;
-    padding: 30px 30px 30px 0px;
+    margin: 30px 30px 30px 0px;
+    box-sizing: border-box;
 }
 
 .result-description {
     float:left;
     width:360px;
-    padding: 30px 295px 30px 0px;
+    margin: 0px 295px 30px 0px;
     
 }
 
