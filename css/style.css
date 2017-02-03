@@ -114,6 +114,12 @@ box-sizing: content-box;
     padding: 34px 300px 110px 300px;
 }
 
+footer {
+    width:1200px;
+    height:122px;
+    margin-left: 72px;
+}
+
 footer b {
     float: left;
     width:241px;
@@ -138,6 +144,8 @@ footer b {
     padding: 37px 25px 40px 10px;
     margin-right: 72px;
 }
+
+
 
 .hotel-search {
     width: 575px;
@@ -218,11 +226,11 @@ label {
 .result-description {
     float:left;
     width:360px;
-    margin: 0px 295px 30px 0px;
+    margin: 0px 0px 30px 0px;
     
 }
 
-.result-rating; {
+.result-rating {
     float:right;
     width:240px;
     padding: 30px 0px 30px 150px;
