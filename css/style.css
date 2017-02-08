@@ -10,9 +10,7 @@ body {
     padding:0;
         }
 
-* {
-   border: 1px solid red !important;
-}
+
 
 h2 {
     font-size:30px;
@@ -234,7 +232,6 @@ box-sizing: content-box;
 
 
 .interested {
-    height:885px;
     background-color: #ffffff;
 }
 
@@ -242,6 +239,10 @@ box-sizing: content-box;
     padding: 34px 300px 110px 300px;
     text-align: center;
     line-height: 24px;
+}
+
+.footer-position {
+    position: relative;
 }
 
 footer {
@@ -254,8 +255,8 @@ footer {
 
 .inner-footer {
     position:absolute;
-    top:2650px;
-    left:76px;
+    bottom:0;
+    left:0;
 }
 
 footer b {
@@ -292,7 +293,8 @@ footer b {
 
 .copyright p {
     display:inline-block;
-    padding: 94px 0;
+    margin:0;
+    padding:0;
     
 }
 
@@ -317,8 +319,21 @@ footer b {
     vertical-align: middle;
 }
 
+
+.social-links .btn:hover {
+    background-color: #669ec0;
+}
+
+
 .tw-btn {
     background-image: url(../img/btn-twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tw-btn:active {
+    background-color: #5496bd;
+    background-image: url(../img/btn-twitter-opacity.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -329,11 +344,27 @@ footer b {
     background-position: center;
 }
 
+.fb-btn:active {
+    background-color: #5496bd;
+    background-image: url(../img/btn-facebook-opacity.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .youtube-btn {
     background-image: url(../img/btn-youtube.png);
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.youtube-btn:active {
+    background-color: #5496bd;
+    background-image: url(../img/btn-youtube-opacity.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 .hotel-search {
@@ -359,8 +390,8 @@ footer b {
 
 .popup-search {
     position:absolute;
-    top:269%;
-    left:28%;
+    top:0;
+    left:25%;
     z-index:10px;
     width:575px;
     height:396px;
@@ -383,24 +414,72 @@ footer b {
 #movein, #moveout {
     width: 346px;
     height: 38px;
+    background-image: url(../img/calendar.png);   
+    background-repeat: no-repeat;    
+    background-position: 310px; 
+    
 }
 
 #adults, #kids {
     width: 115px;
     height: 38px;
     margin-right:20px;
+    background-image: url(../img/less.png);
+    
 }
 
-label {
+.popup-search label {
     padding: 13px;
 }
 
-#movein, #moveout, #adults, #kids:hover {
+#movein:hover {
+    background: #ebebeb;
+    border:none;
+     background-image: url(../img/calendar-hover.png);   
+    background-repeat: no-repeat;  
+    background-position: 310px; 
+}
+
+#moveout:hover {
+    background: #ebebeb;
+    border:none;
+     background-image: url(../img/calendar-hover.png);   
+    background-repeat: no-repeat;   
+    background-position: 310px; 
+}
+
+#adults:hover {
     background: #ebebeb;
     border:none;
 }
 
-#movein, #moveout, #adults, #kids:focus {
+#kids:hover {
+    background: #ebebeb;
+    border:none;
+}
+
+#movein:focus {
+    background: #fff;
+    border:2px solid #e5e5e5;
+     background-image: url(../img/calendar-click.png);   
+    background-repeat: no-repeat;    
+    background-position: 310px; 
+}
+
+#moveout:focus {
+    background: #fff;
+    border:2px solid #e5e5e5;
+     background-image: url(../img/calendar-click.png);   
+    background-repeat: no-repeat;    
+    background-position: 310px; 
+}
+
+#adults:focus {
+    background: #fff;
+    border:2px solid #e5e5e5;
+}
+
+#kids:focus {
     background: #fff;
     border:2px solid #e5e5e5;
 }
@@ -435,8 +514,34 @@ label {
 }
 
 input[type="checkbox"] {
-    background-image:url(../img/checkbox-undone.png); 
+    display: none;
 }
+
+input[type="checkbox"]+label {
+    position:relative;
+    padding-left: 30px;
+    padding-bottom: 21px;
+    line-height: 22px;
+    display:inline-block;
+    vertical-align: top;
+    cursor:pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height:26px;
+    background: url(../img/checkbox-undone.png) no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+input[type="checkbox"]:checked+label::before {
+    background: url(../img/checkbox-checked.png) no-repeat;
+}
+
 
 .filters ul {
     list-style: none;
@@ -467,6 +572,7 @@ input[type="checkbox"] {
 }
 
 .founded {
+    background: #fefefe;
     width: 1200px;
     height: 90px;
 }
@@ -499,10 +605,19 @@ input[type="checkbox"] {
     padding: 35px 0px 35px 85px;
 }
 
+.results {
+    background: #fefefe;
+    
+}
+
 .result {
-    width:1200px;
+    box-shadow: none;
+    background: #fefefe;
+    border-bottom: 1px solid f6f6f6;
+    width:1056px;
     height:150px;
-    margin: 30px 72px 30px 72px;
+    margin: 0px 72px 30px 72px;
+    padding-top:30px;
 }
 
 .result img {
