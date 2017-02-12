@@ -41,29 +41,34 @@
        </ul>
     </div>    
     
-<div  class="filter3">
-<h4> Стоимость жилья в сутки </h4>
-     <input type="text" value="от 0"> 
-     <input type="text" value="до 3000">
-    
-   <p><input type="range" min="1" max="4000"></p>
-
-    
-<a class="btn btn-show" href="#"> Показать </a> 
-</div>
+<div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
  </form>   </div>
 
 <div class="founded layout-container"> 
 <h3> Найдено: 3</h3>
 <p class="little-details"> Сортировка: </p>
 <ul> 
-<li> По цене </li>
+<li class="current-detail"> По цене </li>
 <li> <a class="little-details" href="#"> По типу</a> </li>
 <li> <a class="little-details" href="#"> По рейтингу</a> </li>
 </ul>
 <div class='sort-btns'>
-<a class="btn arrow-btn-down" href="#"> По убыванию </a>
-<a class="btn arrow-btn-up" href="#"> По возрастанию </a> 
+<a class="btn arrow-btn-up" href="#"> </a>
+<a class="btn arrow-btn-down" href="#"> </a> 
     
 </div>
 </div>     
@@ -72,7 +77,7 @@
     
  <div class="result">   
 <img src="img/amara.jpg" width="135" height="89"> 
-<div class="result-description"><h3> Amara resort & Spa</h3>
+<div class="result-description"><h3> <a href="#"> Amara resort & Spa </a></h3> 
 <p> Гостиница   от 4000 р.</p>
 <a class="btn details-btn" href="#"> Подробнее </a>
 <a class="btn book-btn" href="#"> Забронировать </a>
@@ -82,7 +87,7 @@
 
  <div class="result">
 <img src="img/quailinn.jpg"  width="135" height="89">       
-<div class="result-description"><h3> Desert Quail INN</h3>
+<div class="result-description"><h3> <a href="#"> Desert Quail INN</a></h3>
 <p> Мотель   от 3000 р.</p>
 <a class="btn details-btn" href="#"> Подробнее </a>
 <a class="btn book-btn" href="#"> Забронировать </a>
@@ -92,7 +97,7 @@
  
 <div class="result">
 <img src="img/villasatpoco.jpg"  width="135" height="89">       
-<div class="result-description"><h3> Villas at Poco Diablo </h3>
+<div class="result-description"><h3>  <a href="#"> Villas at Poco Diablo </a></h3>
 
 <p> Апартаменты   от 2000p.</p>
 <a class="btn details-btn" href="#"> Подробнее </a>
@@ -104,18 +109,16 @@
       
     
       
-<footer class="layout-container clearfix">
+<footer class="footer layout-container clearfix">
     
-      
      <div class="footer-tag"> <b> #VISITSEDONA </b>  </div> 
     <div class="social-links"> 
     <a class="btn tw-btn" href="#"> </a> 
     <a class="btn fb-btn" href="#">  </a> 
     <a class="btn youtube-btn" href="#"> </a>
         </div> 
-    <div class="copyright">  <p> website by </p>  <a class="copyright-img" href="htmlacademy.ru"> </a> 
+    <div class="copyright">  <p>website by </p>  <a class="copyright-img" href="https://www.htmlacademy.ru"> <img src="img/htmlacademy-copyright.png" alt="HTML Academy"> </a> 
 
-    </div>    
     </div>    
     
 </footer>

@@ -55,9 +55,12 @@ box-sizing: content-box;
 
 .logo {
     position: absolute;
-    left:48%;
+    left:50%;
     top:0;
+    margin-left: -69px;
     z-index: 3;
+    width: 138px;
+    height: 70px;
 }
 
 .main-navigation a {
@@ -130,15 +133,14 @@ box-sizing: content-box;
 .intro::after {
     content: url(../img/indes-intro-mask.png);
     position: absolute;
-    top:90%;
+    height: 57px;
+    width: 1200px;
+    bottom:0%;
     left:0;
 }
 
 .description  {
     background-color: #ffffff;
-    background-image: url(../img/indes-intro-mask.png);
-    background-position: top;
-    background-repeat: no-repeat;
     height:215px;
     text-align: center;
     padding-top: 60px;
@@ -160,6 +162,12 @@ box-sizing: content-box;
     font-size:21px;
     line-height: 21px;
     text-align: center;
+    
+}
+
+.feature1-detail b {
+    display: block;
+    margin-bottom: 30px;
 }
 
 .first-feature-text {
@@ -180,8 +188,8 @@ box-sizing: content-box;
 .feature1-detail {
     float:left;
     width:400px;
-    height:335px;
-    padding: 55px 55px 65px 55px;
+    height: 331px;
+    padding: 59px 55px 83px 55px;
     background-color: #ffffff;
     }
 
@@ -193,13 +201,11 @@ box-sizing: content-box;
     float:right;
 }
 
-.feature1-detail b {
-    text-align: center;
-}
+
 
 .feature1-detail img {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 110px;
+    margin-bottom: 30px;
 }
 
 .feature2-pic {
@@ -295,17 +301,16 @@ footer b {
     display:inline-block;
     margin:0;
     padding:0;
+    line-height: 45px;
+    margin-right: -30px;
     
 }
 
 .copyright-img {
     display: inline-block;
-    background-image: url(../img/htmlacademy-copyright.png);
-    background-repeat: no-repeat;
-    background-position: center;
     width: 120px;
-    height:42px;
-    padding:60px;
+    padding:39px;
+    
 
 }
 
@@ -392,7 +397,7 @@ footer b {
     position:absolute;
     top:0;
     left:25%;
-    z-index:10px;
+    
     width:575px;
     height:396px;
     background-color: white;
@@ -424,8 +429,11 @@ footer b {
     width: 115px;
     height: 38px;
     margin-right:20px;
-    background-image: url(../img/less.png);
+background: url(../img/less.png) no-repeat 10px 18px,
+                #f2f2f2 url(../img/more.png) no-repeat 90px 14px; 
+
     
+                
 }
 
 .popup-search label {
@@ -451,11 +459,15 @@ footer b {
 #adults:hover {
     background: #ebebeb;
     border:none;
+ background: url(../img/less-hover.png) no-repeat 10px 18px,
+                #f2f2f2 url(../img/more-hover.png) no-repeat 90px 14px; 
 }
 
 #kids:hover {
     background: #ebebeb;
     border:none;
+    background: url(../img/less-hover.png) no-repeat 10px 18px,
+                #f2f2f2 url(../img/more-hover.png) no-repeat 90px 14px; 
 }
 
 #movein:focus {
@@ -477,11 +489,15 @@ footer b {
 #adults:focus {
     background: #fff;
     border:2px solid #e5e5e5;
+     background: url(../img/less-click.png) no-repeat 10px 18px,
+                #f2f2f2 url(../img/more-click.png) no-repeat 90px 14px; 
 }
 
 #kids:focus {
     background: #fff;
     border:2px solid #e5e5e5;
+     background: url(../img/less-click.png) no-repeat 10px 18px,
+                #f2f2f2 url(../img/more-click.png) no-repeat 90px 14px;
 }
 
 .find-results {
@@ -571,6 +587,13 @@ input[type="checkbox"]:checked+label::before {
     
 }
 
+
+.result-description>h3>a {
+    text-decoration: none;
+    color:#000;
+}
+
+
 .founded {
     background: #fefefe;
     width: 1200px;
@@ -581,28 +604,80 @@ input[type="checkbox"]:checked+label::before {
     float: left;
     width:160px;
     margin-left: 72px;
-    padding-right: 40px;
-    padding-top:31px;
+    padding:8px 0;
     
+}
+
+
+
+.little-details p{
+   
+}
+
+.current-detail {
+    color:#81b3d2;
+}
+
+a.little-details {
+    border-bottom: dotted 1px #81b3d2;
+    text-decoration: none;
+    color:black;
+    opacity:0.3;
+    
+}
+
+.little-details+ul {
+    margin:25px 0;
 }
 
 .founded p {
     float:left;
     padding-top:41px;
+         font-size: 12px;
+    line-height: 18px;
+    border:none;
+    opacity:1;
+    padding:25px 0;
     
 }
 
 .founded ul {
     float:left;
-    width:288px;
-    height:90px;
+    list-style: none;
+    margin: 35px;
+    padding-right: 40px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.founded li {
+    display: inline-block;
+    padding-right: 30px;
 }
 
 .sort-btns {
     float:right;
-    width: 240px;
     margin-right: 88px;
     padding: 35px 0px 35px 85px;
+}
+
+.arrow-btn-down {
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    background-image: url(../img/down.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arrow-btn-up {
+    display: inline-block;
+    width: 10px;
+    height: 11px;
+    background-image: url(../img/up-click.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:5px;
 }
 
 .results {
@@ -610,20 +685,48 @@ input[type="checkbox"]:checked+label::before {
     
 }
 
+.result-description .btn {
+    padding:4px 8px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.details-btn {
+    width:110px;
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.book-btn {
+    width:142px;
+    background-color: #766357;
+}
+
 .result {
     box-shadow: none;
     background: #fefefe;
-    border-bottom: 1px solid f6f6f6;
-    width:1056px;
+    border-bottom: 1px solid #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+    width:auto;
     height:150px;
-    margin: 0px 72px 30px 72px;
-    padding-top:30px;
+    padding: 30px 72px 30px 72px;
+
+}
+
+.result-description h3 {
+    margin:2px;
+}
+
+.result-description p {
+    margin:9px 0;
 }
 
 .result img {
     display:block;
     float: left;
-    margin: 30px 30px 30px 0px;
+    margin: 0px 30px 45px 0px;
     box-sizing: border-box;
 }
 
@@ -637,5 +740,162 @@ input[type="checkbox"]:checked+label::before {
 .result-rating {
     float:right;
     width:240px;
-    padding: 30px 0px 30px 150px;
+    padding: 0px 0px 0px 150px;
+}
+
+.result-rating img {
+    margin-right:0;
+}
+
+
+.rating b{
+    font-weight: normal;
+    color:#666666;
+}
+
+.rating {
+    background-color: #f2f2f2;
+    padding: 4px 8px;
+}
+
+
+.filter-range {
+    float: right;
+
+  margin-right: 72px;
+    margin-top:23px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  width:318px;
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 21px;
+    padding-top:5px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.filter1 h4, .filter2 h4 {
+    font-size: 16px;
 }
