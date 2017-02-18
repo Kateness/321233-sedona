@@ -749,7 +749,7 @@ input[type="checkbox"]:checked+label::before {
     background-image: url(../img/up-click.png);
     background-position: center;
     background-repeat: no-repeat;
-    margin-right:5px;
+    margin-right:10px;
 }
 
 .arrow-btn-up:hover {
