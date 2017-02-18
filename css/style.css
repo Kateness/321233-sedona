@@ -601,8 +601,7 @@ input[type="checkbox"]:checked+label::before {
     float: right;
     width:328px;
     height:215px;
-    
-}
+ }
 
 
 .result-description>h3>a {
@@ -615,22 +614,16 @@ input[type="checkbox"]:checked+label::before {
     background: #fefefe;
     width: 1200px;
     height: 90px;
-    padding:0px 88px 0px 72px;
+    padding:0px 73px 0px 72px;
 }
 
 .founded h3 {
     float: left;
     width:160px;
-    
-    padding:8px 0;
+     padding:8px 0;
     
 }
 
-
-
-.little-details p{
-   
-}
 
 
 .little-details {
@@ -641,22 +634,21 @@ input[type="checkbox"]:checked+label::before {
     
 }
 
-.little-details li.current-detail {
+a.current-detail {
+    border-bottom:none;
     color:#81b3d2;
-    
 }
 
 
-.little-details:hover {
+a.little-details:hover {
     border-bottom: dotted 1px #81b3d2;
     text-decoration: none;
     color:#81b3d2;
-    opacity:1;
-    
+    opacity:1;   
 }
 
 
-.little-details:active {
+a.little-details:active {
     border: none;
     text-decoration: none;
     color:black;
@@ -759,7 +751,7 @@ input[type="checkbox"]:checked+label::before {
     background-image: url(../img/up-hover.png);
     background-position: center;
     background-repeat: no-repeat;
-    margin-right:5px;
+    margin-right:10px;
 }
 
 .arrow-btn-up:active {
@@ -769,7 +761,7 @@ input[type="checkbox"]:checked+label::before {
     background-image: url(../img/up-click.png);
     background-position: center;
     background-repeat: no-repeat;
-    margin-right:5px;
+    margin-right:10px;
 }
 
 .results {
@@ -872,10 +864,10 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .result-rating img {
-    float: right;
+
     margin-right:0;
     margin-top: 5px;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 
@@ -885,8 +877,9 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .rating {
+    width:110px;
     background-color: #f2f2f2;
-    padding: 4px 15px;
+    padding: 4px 13px;
 }
 
 
