@@ -100,7 +100,7 @@ box-sizing: content-box;
     vertical-align:top;
     font-size:14px;
     line-height: 26px;
-    margin-right: 110px;
+    margin-right: 83px;
 }
 
 .main-navigation li:last-child {
@@ -112,7 +112,7 @@ box-sizing: content-box;
 }
 
 .main-navigation li:nth-child(2) {
-    margin-right: 264px;
+    margin-right: 319px;
 }
 
 .header {
@@ -170,6 +170,7 @@ box-sizing: content-box;
     float:left;
     color:#ffffff;
     width:400px;
+    min-height: 256px;
 background-color: #81b3d2;
     padding:48px;
     text-align: center;
@@ -180,12 +181,13 @@ background-color: #81b3d2;
     background-repeat: repeat-y;
     background-position: right;
     background-color: #b0a9a5;
+    min-height: 256px;
 }
 
 .feature1-pic {
     float:right;
     width:800px;
-    height:255px;
+    height:256px;
 }
 
 .feature1-detail {
@@ -229,7 +231,7 @@ background-color: #81b3d2;
 .second-picture-text {
     float:right;
     width:400px;
-    min-height: 255px;
+    min-height: 256px;
     padding:50px 40px 54px 40px;
     color:#ffffff;
     text-align: center;
@@ -360,7 +362,7 @@ margin: 0 6px;
     display: inline-block;
     background-color: #81b3d2;
     height: 48px;
-    width: 48px;
+    width: 46px;
     margin-right: 6px;
     vertical-align: middle;
 }
