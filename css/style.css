@@ -917,17 +917,20 @@ a.little-details:active {
 .rating b{
     font-weight: normal;
     color:#666666;
+    background-color: #f2f2f2;
+    padding: 4px 13px;
  }
 
 .rating-stars {
-    margin-bottom: 45px;
+    float: right;
+    clear: both;
+    margin-bottom: 50px;
     position: relative;
 }
 
 .rating {
     width:110px;
-    background-color: #f2f2f2;
-    padding: 4px 13px;
+
 }
 
 .star:before {
@@ -1030,14 +1033,15 @@ a.little-details:active {
   position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  width: 21px;
+  height: 21px;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .range-toggle:hover {
