@@ -14,8 +14,7 @@ buttn.addEventListener("click",function(event) {
         event.preventDefault();
         popup.classList.add("popup-search");
         popup.classList.toggle("hotel-search-close");
-        
-
+  
     });
     
   
@@ -28,6 +27,5 @@ form.addEventListener("submit",function(event) {
      } else {
              localStorage.setItem("adults", adults.value);
              localStorage.setItem("kids", kids.value);
-         }
-         
+         } 
          });
