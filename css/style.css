@@ -269,11 +269,12 @@ box-sizing: content-box;
 footer {
     width:1200px;
     height:122px;
-    margin-left: 72px;
+
     background-color: #fefefe;
     opacity: 0.9;
      padding-left: 72px;
     padding-right: 72px;
+        color: #101010;
 }
 
 .inner-footer {
@@ -653,6 +654,7 @@ input[type="checkbox"]:checked+label::before {
     width: 1200px;
     height: 90px;
     padding:0px 73px 0px 72px;
+    border-bottom: 2px solid #f6f6f6;
 }
 
 .founded h3 {
@@ -850,8 +852,8 @@ a.little-details:active {
 .result {
     box-shadow: none;
     background: #fefefe;
-    border-bottom: 1px solid #f6f6f6;
-    border-top: 1px solid #f6f6f6;
+    border-bottom: 2px solid #f6f6f6;
+
     width:auto;
     height:150px;
     padding: 19px 72px 30px 72px;
@@ -897,8 +899,8 @@ a.little-details:active {
 
 .result-rating {
     float:right;
-    width:240px;
-    padding: 0px 0px 0px 150px;
+    width:110px;
+
 }
 
 .result-rating img {
@@ -912,6 +914,10 @@ a.little-details:active {
 .rating b{
     font-weight: normal;
     color:#666666;
+ }
+
+.rating-stars {
+    margin-bottom: 45px;
 }
 
 .rating {
@@ -919,6 +925,12 @@ a.little-details:active {
     background-color: #f2f2f2;
     padding: 4px 13px;
 }
+
+.star:before {
+    content: url(../img/1star.png);
+    margin-right: 2px;
+}
+
 
 
 .filter-range {
