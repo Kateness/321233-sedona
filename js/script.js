@@ -14,6 +14,8 @@ buttn.addEventListener("click",function(event) {
         event.preventDefault();
         popup.classList.add("popup-search");
         popup.classList.toggle("hotel-search-close");
+
+        
   
     });
     
@@ -23,7 +25,7 @@ form.addEventListener("submit",function(event) {
     if  (!movein.value || !moveout.value || !adults.value || !kids.value) {
              event.preventDefault();
              console.log ("Нужно ввести данные для поиска");
-             popup.classList.add("popup-search-error");
+
      } else {
              localStorage.setItem("adults", adults.value);
              localStorage.setItem("kids", kids.value);
