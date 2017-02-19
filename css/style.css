@@ -154,11 +154,6 @@ box-sizing: content-box;
 }
 
 
-
-.first-feature, .feature2 {
-    background-color:#81b3d2;
-}
-
 .features b {
     font-size:21px;
     line-height: 21px;
@@ -175,15 +170,16 @@ box-sizing: content-box;
     float:left;
     color:#ffffff;
     width:400px;
-
+background-color: #81b3d2;
     padding:48px;
     text-align: center;
 }
 
 .first-feature {
     background-image: url(../img/feature1.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: right;
+    background-color: #b0a9a5;
 }
 
 .feature1-pic {
@@ -215,7 +211,8 @@ box-sizing: content-box;
 .feature2 {
     min-height: 256px;
     background-image: url(../img/feature2.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-color:#b48e7a;
 }
 
 .feature1-detail img {
@@ -233,9 +230,10 @@ box-sizing: content-box;
     float:right;
     width:400px;
     min-height: 255px;
-    padding:50px 40px 50px 40px;
+    padding:50px 40px 54px 40px;
     color:#ffffff;
     text-align: center;
+    background-color:#81b3d2;
 
 }
 
@@ -525,14 +523,14 @@ background: url(../img/less.png) no-repeat 10px 18px,
 }
 
 .adults-form:hover {
-    background: #ebebeb;
+
     border:none;
  background: url(../img/less-hover.png) no-repeat 10px 18px,
                 #f2f2f2 url(../img/more-hover.png) no-repeat 90px 14px; 
 }
 
 .kids-form:hover {
-    background: #ebebeb;
+  
     border:none;
     background: url(../img/less-hover.png) no-repeat 10px 18px,
                 #f2f2f2 url(../img/more-hover.png) no-repeat 90px 14px; 
