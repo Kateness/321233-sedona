@@ -196,7 +196,7 @@ html {
 
 .second-picture-text h3 {
     color: white;
-    margin: 54px 66px 25px;
+    margin: 54px 66px 26px;
     line-height: 21px;
 }
 
@@ -240,7 +240,7 @@ html {
     float:right;
     width:400px;
     min-height: 256px;
-    padding:0 50px;
+    padding:0 40px;
     color:#ffffff;
     text-align: center;
     background-color:#81b3d2;
@@ -1206,3 +1206,6 @@ a.little-details:active {
     margin-bottom: 29px;
 }
 
+.feature-spaces {
+    white-space: pre-wrap;
+}
